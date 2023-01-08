@@ -1,5 +1,3 @@
-import loadPage from "./page-load";
+import initializeWebsite from "./website";
 
-document.addEventListener("DOMContentLoaded", function () {
-  loadPage();
-});
+initializeWebsite();
