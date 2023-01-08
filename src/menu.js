@@ -31,7 +31,7 @@ function createMenuItem(name, description) {
   const menuItem = document.createElement("div");
   menuItem.classList.add("menu-item");
 
-  const foodName = document.createElement("h2");
+  const foodName = document.createElement("h4");
   foodName.textContent = name;
 
   const foodDescription = document.createElement("p");
