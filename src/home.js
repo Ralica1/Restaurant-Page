@@ -10,7 +10,7 @@ function createHome() {
   header.textContent = "Bosnian Cuisine";
 
   const paragraph = document.createElement("p");
-  paragraph.textContent = "Made with passion since the exsitece of Bosnia and Herzegovina";
+  paragraph.textContent = "Made with passion since the exsitence of Bosnia and Herzegovina";
 
   const visitUs = document.createElement("p");
   visitUs.textContent = "Visit us!";
