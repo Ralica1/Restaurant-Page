@@ -27,15 +27,16 @@ function createMenu() {
 
   return menu;
 }
-function createMenuItem(name, description) {
+
+function createMenuItem(name, ingredients) {
   const menuItem = document.createElement("div");
   menuItem.classList.add("menu-item");
 
   const foodName = document.createElement("h4");
   foodName.textContent = name;
 
-  const foodDescription = document.createElement("p");
-  foodDescription.textContent = description;
+  const foodIngredients = document.createElement("p");
+  foodIngredients.textContent = ingredients;
 
   const foodImage = document.createElement("img");
   foodImage.src = `images/foods/${name.toLowerCase()}.jpg`;
@@ -43,7 +44,7 @@ function createMenuItem(name, description) {
 
   menuItem.appendChild(foodImage);
   menuItem.appendChild(foodName);
-  menuItem.appendChild(foodDescription);
+  menuItem.appendChild(foodIngredients);
 
   return menuItem;
 }

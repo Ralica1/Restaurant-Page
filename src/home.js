@@ -6,18 +6,21 @@ function createHome() {
   chefImage.src = "images/restaurant.jpg";
   chefImage.alt = "Restaurant";
 
-  home.appendChild(createParagraph("Bosnian Cuisine"));
-  home.appendChild(createParagraph("Made with passion since the exsitece of Bosnia and Herzegovina"));
+  const header = document.createElement("h1");
+  header.textContent = "Bosnian Cuisine";
+
+  const paragraph = document.createElement("p");
+  paragraph.textContent = "Made with passion since the exsitece of Bosnia and Herzegovina";
+
+  const visitUs = document.createElement("p");
+  visitUs.textContent = "Visit us!";
+
+  home.appendChild(header);
+  home.appendChild(paragraph);
   home.appendChild(chefImage);
-  home.appendChild(createParagraph("Visit us!"));
+  home.appendChild(visitUs);
 
   return home;
-}
-
-function createParagraph(text) {
-  const paragraph = document.createElement("p");
-  paragraph.textContent = text;
-  return paragraph;
 }
 
 function loadHome() {
